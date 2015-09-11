@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<routes>
+  <route url="/OpenClassRooms/mooc_poo_php/tp4-exo/OCFram/Web/" module="News" action="index" />
+  <route url="/OpenClassRooms/mooc_poo_php/tp4-exo/OCFram/Web/news-([0-9]+)\.html" module="News" action="show" vars="id"/>
+  <route url="/OpenClassRooms/mooc_poo_php/tp4-exo/OCFram/Web/commenter-([0-9]+)\.html" module="News" action="insertComment" vars="news" />
+</routes>

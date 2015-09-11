@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<definitions>
+  <define var="login" value="admin" />
+  <define var="pass" value="mdp" />
+  <define var="cache_duree" value="10" />
+  <define var="cache_dir" value="tmp/cache/views/" />
+</definitions>

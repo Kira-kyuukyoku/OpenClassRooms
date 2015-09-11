@@ -1,0 +1,21 @@
+/* EFFACEMENT DE LA BASE DE DONNÉES */
+DROP DATABASE IF EXISTS news;
+
+/* CREATION DE LA BASE DE DONNÉES */
+CREATE DATABASE news DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+/* SÉLÉCTION DE LA BASE DE DONNÉES */
+USE news;
+
+/* CRÉATION DE LA TABLE PERSONNAGES */
+CREATE TABLE news
+(
+    id SMALLINT(4) UNSIGNED AUTO_INCREMENT,
+    auteur VARCHAR(25) NOT NULL,
+    titre VARCHAR(100) NOT NULL,
+    contenu TEXT NOT NULL,
+    dateAjout datetime NOT NULL,
+    dateModif datetime NOT NULL,
+    CONSTRAINT pk_news PRIMARY KEY(id),
+    CONSTRAINT titre_unique UNIQUE(titre)
+);
